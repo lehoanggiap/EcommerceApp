@@ -1,0 +1,126 @@
+/* Home Page Screen */
+  
+.top-body{
+    background-color: rgb(238, 238, 238);
+    padding: 50px;
+}
+.product-header-slogan{
+    font-size: 80px;
+    
+}
+.header-slogan-secondary{
+    font-size: 25px;
+}
+.product-list {
+    padding-top: 50px;
+}
+.product{
+    border: rgb(238, 238, 238) 3px solid;
+    padding: 15px;
+    border-radius: 5px;
+}
+.product-btn{
+    padding: 7px;
+    border-radius: 3px;
+}
+.btn-order{
+    margin-left: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(246, 166,83);
+}
+.btn-order:hover{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+}
+.btn-detail{
+    margin-right: -10px;
+    color: white;
+    background-color: rgb(57, 136,198);
+}
+.btn-detail:hover{
+    color: white;
+    background-color:rgb(57, 177, 198);
+    text-decoration: none;
+}
+/* Cart Screen */
+.product-list-cart{
+    padding-top: 50px;
+}
+.product-name-column{
+    width: 500px;
+}
+.cart-btn-remove{
+   padding: 0 5px;
+}
+.product-detail-info{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.product-code{
+    background-color:rgb(246, 166,83);
+    padding: 0 5px;
+    color: white;
+}
+.btn-back{
+    margin: 0;
+    color: white;
+    background-color: rgb(103, 177, 94);
+}
+.btn-back:hover{
+    color: white;
+    background-color:rgb(94, 177, 131);
+    text-decoration: none;
+}
+.btn-order-detail{
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(246, 166,83);
+}
+.btn-order-detail:hover{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+}
+/* Add new product */
+.btn-logout{
+    padding: 8px;
+    text-align: center;
+    color: white;
+    background-color: rgb(241, 10, 10);
+    border-radius: 5px;
+}
+.add-new-product-form{
+    margin-top: 20px;
+}
+/* Add new product *//* Form*/
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 80px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+
+  .addNewProduct-label{
+      margin-right: 20px;
+      font-weight: bold;
+      font-size: 15px;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a{
+    
+        cursor: pointer;
+
+}

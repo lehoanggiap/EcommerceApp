@@ -1,0 +1,63 @@
+
+<div class="top-body">
+    <p class="product-header-slogan">Products</p>
+</div>
+<!-- Product Detail Info -->
+<div class="product-detail-info">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="product-detail-image">
+                <img src="{{item.hinhAnh}}" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <!-- Product Detail name -->
+            <h4 class="product-detail-name">{{item.productName}}</h4>
+            <!-- Product Detail Description -->
+            <p class="product-detail-description">
+                {{item.moTa}}
+            </p>
+            <!-- Product Detail Code -->
+            <div class="product-detail-code">
+                <b>Item Code: </b><span class="product-code">{{item.id_product}}</span>
+            </div>
+            <!-- Product Detail Manufacture -->
+            <div class="product-detail-manufacture">
+                <b>manufacture: </b><span>{{item.nhaSX}}</span>
+            </div>
+            <!-- Product Detail Manufacture -->
+            <div class="product-detail-category">
+                <b>category: </b><span class="text-info">{{item.danhMuc}}</span>
+            </div>
+            <!-- Product Detail quantity -->
+            <div class="product-detail-quantity">
+                <b>Availble units in stock: </b><span>{{item.unitInStock}}</span>
+            </div>
+            <!-- Product Detail Price -->
+            <p class="product-detail-price">
+                {{item.unitPrice}} USD
+            </p>
+            <!-- Product Detail Buttons -->
+            <div class="product-detail-buttons">
+                <!-- Button Detail -->
+                <a class="product-btn btn-back" routerLink="/homepage-screen" routerLinkActive="active">
+                    <small>
+                        <b>
+                            <i class="fas fa-arrow-circle-left"></i> Back
+                        </b>
+                    </small>
+                </a>
+                <router-outlet></router-outlet>
+                <!-- Button Order -->
+                <a class="product-btn btn-order-detail" (click)=addtocart(item)>
+                    <small>
+                        <b style="color: aliceblue;" >
+                            <i class="fas fa-shopping-cart" style="transform: rotateY(180deg);"></i> Order now
+                        </b>
+                    </small>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

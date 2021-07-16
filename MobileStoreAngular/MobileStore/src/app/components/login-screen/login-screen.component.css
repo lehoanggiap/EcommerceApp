@@ -1,0 +1,46 @@
+.top-body{
+    background-color: rgb(238, 238, 238);
+    padding: 50px;
+}
+.product-header-slogan{
+    font-size: 80px;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  border: 1px silver solid;
+  border-radius: 5px;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-floating{
+    padding: 5px 0;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-title{
+    margin: 0px -15px;
+    margin-top: -15px;
+    border-bottom: 1px silver solid;
+    background-color: rgb(238, 238, 238);
+}
+.form-title p{
+    padding: 0 15px;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.login-form{
+    padding: 10px 0;
+}
+.login-main{
+    padding-top: 50px;
+}

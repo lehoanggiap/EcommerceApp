@@ -1,0 +1,21 @@
+<div class="top-body">
+    <p class="product-header-slogan">Mobile Store</p>
+</div>
+
+<div class="login-main">
+
+    <main class="form-signin">
+        <div class="form-title">
+            <p>Please sign in</p>
+        </div>
+        <form *ngIf="loginForm" [formGroup]="loginForm" class="login-form" (ngSubmit)="onSubmit()">
+            <div class="form-floating">
+                <input type="text" class="form-control" formControlName="adminName" id="floatingInput" placeholder="User Name" required>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" formControlName="password" placeholder="Password" required>
+            </div>
+            <button class="w-100 btn btn-lg btn-success" type="submit">Login</button>
+        </form>
+    </main>
+</div>

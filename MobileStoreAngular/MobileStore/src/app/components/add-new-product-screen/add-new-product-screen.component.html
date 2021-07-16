@@ -1,0 +1,99 @@
+<div class="top-body">
+    <div class="row">
+        <div class="col-md-10" style="padding-top: 20px;">
+            <p class="product-header-slogan">Products</p>
+            <p class="header-slogan-secondary">Add products</p>
+        </div>
+        <div class="col-md-2 text-right" routerLink="/login-screen" routerLinkActive="active">
+            <button style="padding: 10px,20px,10px,20px; font-size: 15px;" mat-raised-button color="warn"  [routerLink]="['/login-screen/']">logout</button>
+       
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="add-new-product-form">
+        <p style="margin-bottom: -15px; font-size: 20px;">Add New Product</p>
+    <hr>
+    </div>
+
+    <form class="example-form">
+        <div class="row">
+            <div class="addNewProduct-label">
+                <div class="example-full-width">
+                    <label for="" class="addNewProduct-label">Product Name</label>
+                </div>
+
+                <div class="example-full-width">
+                    <label for="" class="addNewProduct-label">Unit Price</label>
+                </div>
+
+                <div class="example-full-width">
+                    <label for="" class="addNewProduct-label">Units In Stock</label>
+                </div>
+                <div class="example-full-width">
+                    <label for="" class="addNewProduct-label">Description</label>
+                </div>
+                <div class="example-full-width">
+                    <label for="" class="addNewProduct-label" style="margin-top: 20px;">Manufacturer</label>
+                </div>
+                <div class="example-full-width">
+                    <label for="" class="addNewProduct-label">Category</label>
+                </div>
+                <div class="example-full-width">
+                    <label for="" class="addNewProduct-label">Condition</label>
+                </div>
+                <div class="example-full-width">
+                    <label for="" class="addNewProduct-label">Product Image File</label>
+                </div>
+            </div>
+
+            <div class="addNewProduct-input">
+                <div class="example-full-width">
+                    <input formControlName="product-name"> 
+                </div>
+                    
+                <div class="example-full-width">
+                    <input formControlName="unit-price"> 
+                </div>
+
+                <div class="example-full-width">
+                    <input type="number" value="0" min="0" step="1" formControlName="units-in-stock">
+                </div>
+
+                <div class="example-full-width">
+                    <textarea formControlName="description"></textarea> 
+                </div>
+                
+                <div class="example-full-width">
+                    <input formControlName="manufacturer"> 
+                </div>
+
+                <div class="example-full-width">
+                    <input formControlName="category"> 
+                </div>
+                
+                <div class="example-full-width">
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">New</mat-radio-button>
+                    <mat-radio-button value="2">Old</mat-radio-button>
+                    <mat-radio-button value="2">Refurbished</mat-radio-button>
+                </mat-radio-group>
+                </div>
+
+                <div class="example-full-width">
+                   <input type="file">
+                    
+                      
+                </div>
+
+                <div class="example-full-width">
+                    <button mat-raised-button style="background-color: rgb(106, 139, 250); color: white;">Add Product</button>
+                </div>
+                
+            </div>
+        </div>
+    
+    
+        
+    </form>
+</div>
